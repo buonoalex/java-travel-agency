@@ -29,6 +29,11 @@ public class Vacation {
         return (int) days;
     }
 
+    //Stampa Vacanza
+    public void PrintVacation(){
+        System.out.println("Hai prenotato una vacanza di "+CalculateDays()+"giorni a "+destionation+"dal "+dateStart+"al "+dateFinish);
+    }
+
     //Getter and Setter
     public String getDestionation() {
         return destionation;
