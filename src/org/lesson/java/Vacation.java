@@ -1,5 +1,6 @@
 package org.lesson.java;
 
+import java.time.Duration;
 import java.time.LocalDate;
 
 public class Vacation {
@@ -19,6 +20,13 @@ public class Vacation {
         this.destionation = destionation;
         this.dateStart = dateStart;
         this.dateFinish = dateFinish;
+    }
+
+    //Metodi
+    public int CalculateDays(){
+        Duration duration = Duration.between(dateStart,dateFinish);
+        long days = duration.toDays();
+        return (int) days;
     }
 
     //Getter and Setter
